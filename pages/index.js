@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,34 +20,34 @@ export default function Home() {
           <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
               <div class="w-full md:w-auto text-gray-800 font-bold text-xl">
-                <a class="text-gray-800 hover:text-gray-700" href="#">
+                <Link class="text-gray-800 hover:text-gray-700" href="#">
                   Victory Labs
-                </a>
+                </Link>
               </div>
               <div class="flex items-center -mx-2">
-                <a class="mx-2 text-gray-600 hover:text-gray-800" href="/">
+                <Link class="mx-2 text-gray-600 hover:text-gray-800" href="/">
                   Home
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="/services"
                   class="mx-2 text-gray-600 hover:text-gray-800"
                 >
                   Services
-                </a>
+                </Link>
 
-                <a class="mx-2 text-gray-600 hover:text-gray-800" href="#">
+                <Link class="mx-2 text-gray-600 hover:text-gray-800" href="#">
                   Portfolio
-                </a>
-                <a
+                </Link>
+                <Link
                   class="mx-2 text-gray-600 hover:text-gray-800"
                   href="blogs.html"
                 >
                   Blog
-                </a>
-                <a class="mx-2 text-gray-600 hover:text-gray-800" href="#">
+                </Link>
+                <Link class="mx-2 text-gray-600 hover:text-gray-800" href="#">
                   Contact
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -90,12 +91,12 @@ export default function Home() {
                   their website content. We can also build custom content
                   management systems for clients with unique needs.
                 </p>
-                <a
+                <Link
                   href="#"
                   class="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
                 >
                   Learn More
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -137,12 +138,12 @@ export default function Home() {
                   design and develop mobile applications that meet your unique
                   requirements.
                 </p>
-                <a
+                <Link
                   href="#"
                   class="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
                 >
                   Learn More
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -184,12 +185,12 @@ export default function Home() {
                   audience, develop messaging that resonates with them, and
                   create a plan for promoting your brand.
                 </p>
-                <a
+                <Link
                   href="#"
                   class="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
                 >
                   Learn More
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -213,12 +214,12 @@ export default function Home() {
                     pellentesque erat non libero ullamcorper, vel auctor sapien
                     lacinia.
                   </p>
-                  <a
+                  <Link
                     href="#"
                     class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
                   >
                     Learn More
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div class="bg-white rounded-lg overflow-hidden shadow-lg">
@@ -234,12 +235,12 @@ export default function Home() {
                     pellentesque erat non libero ullamcorper, vel auctor sapien
                     lacinia.
                   </p>
-                  <a
+                  <Link
                     href="#"
                     class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
                   >
                     Learn More
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div class="bg-white rounded-lg overflow-hidden shadow-lg">
@@ -255,12 +256,12 @@ export default function Home() {
                     pellentesque erat non libero ullamcorper, vel auctor sapien
                     lacinia.
                   </p>
-                  <a
+                  <Link
                     href="#"
                     class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
                   >
                     Learn More
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -278,9 +279,9 @@ export default function Home() {
                     specializes in creating custom solutions for businesses.
                   </p>
                   <p>
-                    <a href="#" class="hover:underline">
+                    <Link href="#" class="hover:underline">
                       Learn More
-                    </a>
+                    </Link>
                   </p>
                 </div>
               </div>
@@ -288,19 +289,19 @@ export default function Home() {
                 <h3 class="font-bold text-xl text-white mb-2">Links</h3>
                 <ul class="list-reset mb-2">
                   <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <a href="#" class="text-white hover:underline">
+                    <Link href="#" class="text-white hover:underline">
                       FAQ
-                    </a>
+                    </Link>
                   </li>
                   <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <a href="#" class="text-white hover:underline">
+                    <Link href="#" class="text-white hover:underline">
                       Help
-                    </a>
+                    </Link>
                   </li>
                   <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <a href="#" class="text-white hover:underline">
+                    <Link href="#" class="text-white hover:underline">
                       Support
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -308,19 +309,19 @@ export default function Home() {
                 <h3 class="font-bold text-xl text-white mb-2">Social Media</h3>
                 <ul class="list-reset mb-2">
                   <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <a href="#" class="text-white hover:underline">
+                    <Link href="#" class="text-white hover:underline">
                       Twitter
-                    </a>
+                    </Link>
                   </li>
                   <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <a href="#" class="text-white hover:underline">
+                    <Link href="#" class="text-white hover:underline">
                       Facebook
-                    </a>
+                    </Link>
                   </li>
                   <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <a href="#" class="text-white hover:underline">
+                    <Link href="#" class="text-white hover:underline">
                       Instagram
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -333,12 +334,12 @@ export default function Home() {
                 </p>
               </div>
               <div class="flex items-center">
-                <a href="#" class="text-white hover:underline mx-4">
+                <Link href="#" class="text-white hover:underline mx-4">
                   Privacy Policy
-                </a>
-                <a href="#" class="text-white hover:underline">
+                </Link>
+                <Link href="#" class="text-white hover:underline">
                   Terms of Service
-                </a>
+                </Link>
               </div>
             </div>
           </div>
