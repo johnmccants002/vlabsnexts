@@ -3,6 +3,16 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHtml5,
+  faReact,
+  faSwift,
+  faNodeJs,
+  faCss3,
+  faJsSquare,
+  faNode,
+} from "@fortawesome/free-brands-svg-icons";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +25,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
+      <main>
         <nav class="bg-white">
           <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
@@ -28,7 +38,6 @@ export default function Home() {
                 <Link class="mx-2 text-gray-600 hover:text-gray-800" href="/">
                   Home
                 </Link>
-
                 <Link
                   href="/services"
                   class="mx-2 text-gray-600 hover:text-gray-800"
@@ -52,222 +61,359 @@ export default function Home() {
             </div>
           </div>
         </nav>
-        <section class="py-20 bg-gray-100">
-          <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-12">
-              Website Development Services
+        <section
+          className={`${styles.sectionClass} ${styles.valuepropheader}`}
+          // id={`${styles.}`}
+          // style={{
+          //   backgroundImage: `url(/images/city.png)`,
+          //   height: "100vh",
+          //   alignItems: "center",
+          //   display: "flex",
+          //   backgroundSize: "cover",
+          //   backgroundPosition: "center",
+          // }}
+        >
+          <div
+            class={`${styles.mainContainer} ${styles.valuepropheaderContainer}`}
+          >
+            <h1 className={`${styles.valuepropheaderH1}`}>Victory Labs</h1>
+            <h2
+              className={`${styles.sectionClassH2} ${styles.valuepropheaderH2}`}
+            >
+              Your Partner in Software Development
             </h2>
-            <div class="flex flex-wrap -mx-4">
-              <div class="w-full md:w-1/2 px-4 mb-8">
-                {/* <img
-                    src="/images/webdev.png"
-                    alt="Website Development"
-                    class="w-full h-auto"
-                  /> */}
-              </div>
-              <div class="w-full md:w-1/2 px-4">
-                <h3 class="text-2xl font-bold mb-4">
-                  HTML, CSS, and JavaScript
-                </h3>
-                <p class="text-gray-700 mb-4">
-                  Our team of web developers are experts in building websites
-                  using the latest HTML, CSS, and JavaScript technologies. We
-                  work closely with our clients to design and develop custom
-                  websites that meet their unique needs.
-                </p>
-                <h3 class="text-2xl font-bold mb-4">React and Node</h3>
-                <p class="text-gray-700 mb-4">
-                  We specialize in building web applications using popular
-                  frameworks like React and Node. Our team has extensive
-                  experience in building scalable and performant web
-                  applications using these technologies.
-                </p>
-                <h3 class="text-2xl font-bold mb-4">
-                  Content Management Systems
-                </h3>
-                <p class="text-gray-700 mb-4">
-                  We work with a variety of content management systems like
-                  WordPress and Squarespace to help our clients easily manage
-                  their website content. We can also build custom content
-                  management systems for clients with unique needs.
-                </p>
-                <Link
-                  href="#"
-                  class="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
-                >
-                  Learn More
-                </Link>
-              </div>
-            </div>
+            <Link
+              href="#plans"
+              class={`${styles.btn} ${styles.valuepropheaderBtn}`}
+            >
+              Get Started
+            </Link>
           </div>
         </section>
-        <section class="py-20 bg-gray-100">
-          <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-12">
-              Mobile App Development Services
-            </h2>
-            <div class="flex flex-wrap -mx-4">
-              <div class="w-full md:w-1/2 px-4 mb-8">
-                {/* <img
-                    src="/images/mobiledev.png"
-                    alt="Mobile App Development"
-                    class="w-full h-auto"
-                  /> */}
-              </div>
-              <div class="w-full md:w-1/2 px-4">
-                <h3 class="text-2xl font-bold mb-4">React Native</h3>
-                <p class="text-gray-700 mb-4">
-                  Our team of mobile app developers are experts in building
-                  mobile applications using the popular React Native framework.
-                  We can help bring your mobile app ideas to life using this
-                  powerful technology.
+
+        {/* <header class="bg-white headerClass">
+          <div class="container mx-auto px-6 py-16">
+            <div class="items-center lg:flex">
+              <div class="lg:w-1/2">
+                <h2 class="text-3xl font-bold text-gray-800 md:text-4xl lg:text-5xl xl:text-6xl">
+                  Transform Your Business with Custom Software
+                </h2>
+                <p class="mt-4 text-gray-600 md:text-xl lg:text-2xl">
+                  We help you create software solutions that solve problems and
+                  drive growth. Get in touch with us today to learn more.
                 </p>
-                <h3 class="text-2xl font-bold mb-4">
-                  Cross-Platform Development
-                </h3>
-                <p class="text-gray-700 mb-4">
-                  We specialize in building cross-platform mobile applications
-                  that work seamlessly on both iOS and Android devices. This
-                  approach allows us to deliver high-quality mobile applications
-                  that are cost-effective and scalable.
-                </p>
-                <h3 class="text-2xl font-bold mb-4">Custom Development</h3>
-                <p class="text-gray-700 mb-4">
-                  We can build custom mobile applications that are tailored to
-                  your specific business needs. Our team can work with you to
-                  design and develop mobile applications that meet your unique
-                  requirements.
-                </p>
-                <Link
-                  href="#"
-                  class="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
-                >
-                  Learn More
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="py-20 bg-gray-100">
-          <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-12">
-              Logo and Marketing Design Services
-            </h2>
-            <div class="flex flex-wrap -mx-4">
-              <div class="w-full md:w-1/2 px-4 mb-8">
-                {/* <img
-                    src="/images/marketing.png"
-                    alt="Logo and Marketing Design"
-                    class="w-full h-auto"
-                  /> */}
-              </div>
-              <div class="w-full md:w-1/2 px-4">
-                <h3 class="text-2xl font-bold mb-4">Midjourney</h3>
-                <p class="text-gray-700 mb-4">
-                  Our team of designers use Midjourney, a powerful design
-                  software, to create stunning logos and marketing materials. We
-                  work closely with our clients to design logos that accurately
-                  represent their brand and marketing materials that resonate
-                  with their target audience.
-                </p>
-                <h3 class="text-2xl font-bold mb-4">DALL-E</h3>
-                <p class="text-gray-700 mb-4">
-                  We use the latest AI technology, DALL-E, to create unique and
-                  eye-catching designs that set our clients apart from their
-                  competition. Our team can help you create a brand identity
-                  that stands out and connects with your customers.
-                </p>
-                <h3 class="text-2xl font-bold mb-4">Consulting Services</h3>
-                <p class="text-gray-700 mb-4">
-                  In addition to design services, we also offer consulting
-                  services to help our clients develop effective marketing
-                  strategies. Our team can work with you to identify your target
-                  audience, develop messaging that resonates with them, and
-                  create a plan for promoting your brand.
-                </p>
-                <Link
-                  href="#"
-                  class="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
-                >
-                  Learn More
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="py-20">
-          <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-12">
-              Website Development Work
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div class="bg-white rounded-lg overflow-hidden shadow-lg">
-                {/* <img
-                    src="https://via.placeholder.com/800x500.png?text=Website+Development+Project"
-                    alt="Website Development Project"
-                    class="w-full h-auto"
-                  /> */}
-                <div class="px-6 py-4">
-                  <h3 class="text-2xl font-bold mb-2">Project Title</h3>
-                  <p class="text-gray-700 text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    pellentesque erat non libero ullamcorper, vel auctor sapien
-                    lacinia.
-                  </p>
-                  <Link
-                    href="#"
-                    class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
-                  >
-                    Learn More
+                <div class="mt-8">
+                  <Link class="btn btn-primary" href="#">
+                    Get Started
                   </Link>
                 </div>
               </div>
-              <div class="bg-white rounded-lg overflow-hidden shadow-lg">
-                {/* <img
-                    src="https://via.placeholder.com/800x500.png?text=Website+Development+Project"
-                    alt="Website Development Project"
-                    class="w-full h-auto"
-                  /> */}
-                <div class="px-6 py-4">
-                  <h3 class="text-2xl font-bold mb-2">Project Title</h3>
-                  <p class="text-gray-700 text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    pellentesque erat non libero ullamcorper, vel auctor sapien
-                    lacinia.
-                  </p>
-                  <Link
-                    href="#"
-                    class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
-                  >
-                    Learn More
-                  </Link>
-                </div>
+              <div class="lg:w-1/2 lg:ml-auto mx-20">
+                <img
+                  class="hidden lg:block"
+                  src="/images/city.png"
+                  alt="Victory Labs"
+                />
               </div>
-              <div class="bg-white rounded-lg overflow-hidden shadow-lg">
-                {/* <img
-                    src="https://via.placeholder.com/800x500.png?text=Website+Development+Project"
-                    alt="Website Development Project"
-                    class="w-full h-auto"
-                  /> */}
-                <div class="px-6 py-4">
-                  <h3 class="text-2xl font-bold mb-2">Project Title</h3>
-                  <p class="text-gray-700 text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    pellentesque erat non libero ullamcorper, vel auctor sapien
-                    lacinia.
-                  </p>
-                  <Link
-                    href="#"
-                    class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
-                  >
-                    Learn More
-                  </Link>
-                </div>
+            </div>
+          </div>
+        </header> */}
+        <section class="bg-gray-100 sectionClass">
+          <div class="container mx-auto px-6 py-20">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+              About Victory Labs
+            </h2>
+            <div class="flex flex-wrap">
+              <div class="w-full md:w-1/2 p-6">
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">
+                  Who we are
+                </h3>
+                <p
+                  class={`text-gray-600 leading-loose ${styles.sectionClassP}`}
+                >
+                  Victory Labs is a software development company that creates
+                  custom software solutions for businesses of all sizes. We
+                  specialize in solving complex problems with technology, and
+                  helping our clients achieve their goals.
+                </p>
+              </div>
+              <div class="w-full md:w-1/2 p-6">
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">
+                  What we do
+                </h3>
+                <p class="text-gray-600 leading-loose">
+                  Our team of experienced developers, designers, and project
+                  managers work together to build software that drives growth,
+                  solves problems, and improves efficiency. We take a
+                  collaborative approach with our clients to ensure that their
+                  needs are met at every step of the development process.
+                </p>
               </div>
             </div>
           </div>
         </section>
 
+        <section id="technologies" class="bg-white-100 py-20 sectionClass">
+          <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">
+              Technologies Used
+            </h2>
+            <ul class="flex flex-wrap justify-center items-center tech-list">
+              <li class="mx-10 my-6 flex flex-col items-center">
+                {/* <i
+                  class="fab fa-html5 fa-4x mb-4"
+                  style={{ color: "#b89c6e" }}
+                ></i> */}
+                <FontAwesomeIcon icon={faHtml5} size={"4x"} color={"#b89c6e"} />
+                <span class="text-center">HTML5</span>
+              </li>
+              <li class="mx-10 my-6 flex flex-col items-center">
+                <FontAwesomeIcon icon={faCss3} size={"4x"} color={"#b89c6e"} />
+                <span class="text-center">CSS3</span>
+              </li>
+              <li class="mx-10 my-6 flex flex-col items-center">
+                <FontAwesomeIcon
+                  icon={faJsSquare}
+                  size={"4x"}
+                  color={"#b89c6e"}
+                />
+                <span class="text-center">JavaScript</span>
+              </li>
+              <li class="mx-10 my-6 flex flex-col items-center">
+                <FontAwesomeIcon icon={faReact} size={"4x"} color={"#b89c6e"} />
+                <span class="text-center">React</span>
+              </li>
+              <li class="mx-10 my-6 flex flex-col items-center">
+                <FontAwesomeIcon icon={faSwift} size={"4x"} color={"#b89c6e"} />
+                <span class="text-center">Swift</span>
+              </li>
+              <li class="mx-10 my-6 flex flex-col items-center">
+                <FontAwesomeIcon icon={faNode} size={"4x"} color={"#b89c6e"} />
+                <span class="text-center">Node</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="bg-gray-100 sectionClass">
+          <div class="container mx-auto px-6 py-20">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+              Our Work
+            </h2>
+            <div class="flex flex-wrap">
+              <div class="w-full md:w-1/3 p-6">
+                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                  <Link href="#">
+                    <img
+                      class="lg:h-48 md:h-36 w-full object-cover object-center"
+                      src="/images/japanesemobile.png"
+                      alt="Site 1"
+                    />
+                  </Link>
+                  <div class="p-6">
+                    <h3 class="title-font text-lg font-medium text-gray-900 mb-3">
+                      Japanese Mobile App
+                    </h3>
+                    <p class="leading-relaxed mb-3 text-gray-900">
+                      Japan's leading mobile app for train schedules and route
+                      planning, HyperDia is the go-to solution for locals and
+                      tourists alike. With real-time updates, fare information,
+                      and even wheelchair accessibility details, HyperDia
+                      provides comprehensive and reliable transportation
+                      information for navigating Japan's complex train system.
+                    </p>
+                    <Link
+                      class="text-indigo-500 inline-flex items-center"
+                      href="#"
+                    >
+                      Learn More
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full md:w-1/3 p-6">
+                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                  <Link href="#">
+                    <img
+                      class="lg:h-48 md:h-36 w-full object-cover object-center"
+                      src="/images/folk.png"
+                      alt="Site 2"
+                    />
+                  </Link>
+                  <div class="p-6">
+                    <h3 class="title-font text-lg font-medium text-gray-900 mb-3">
+                      Artesanías Mexicanas: Exploring the Rich Traditions of
+                      Mexican Folk Art
+                    </h3>
+                    <p class="leading-relaxed mb-3 text-gray-900">
+                      Immerse yourself in the rich culture and vibrant colors of
+                      Mexican folk art with our website. Our collection features
+                      a wide range of traditional crafts, from intricately
+                      designed pottery and textiles to colorful paper mache
+                      sculptures and vibrant hand-carved wooden masks. Discover
+                      the history and meaning behind each piece and explore the
+                      diverse styles and techniques used by artisans throughout
+                      Mexico.
+                    </p>
+                    <Link
+                      class="text-indigo-500 inline-flex items-center"
+                      href="#"
+                    >
+                      Learn more
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full md:w-1/3 p-6">
+                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                  <Link href="#">
+                    <img
+                      class="lg:h-48 md:h-36 w-full object-cover object-center"
+                      src="/images/mgs.png"
+                      alt="Site 3"
+                    />
+                  </Link>
+                  <div class="p-6">
+                    <h3 class="title-font text-lg font-medium text-gray-900 mb-3">
+                      Metal Gear Fandom
+                    </h3>
+                    <p class={`leading-relaxed mb-3 text-gray-900`}>
+                      Join the community of Metal Gear Solid fans and immerse
+                      yourself in the thrilling world of espionage, action, and
+                      stealth. Our fan page is dedicated to all things Metal
+                      Gear Solid, from in-depth analysis of the games' intricate
+                      plotlines and characters, to discussions about the latest
+                      news and rumors surrounding the beloved franchise. Connect
+                      with like-minded fans and share your love for one of the
+                      most iconic and influential video game series of all time.
+                    </p>
+                    <Link
+                      class="text-indigo-500 inline-flex items-center"
+                      href="#"
+                    >
+                      Learn More
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-white sectionClass">
+          <div class="container mx-auto px-6 py-20">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+              Choose Your Plan
+            </h2>
+            <div class="flex flex-wrap">
+              <div class="w-full md:w-1/3 px-6 mb-4">
+                <div class="h-full bg-gray-100 p-8 rounded-lg overflow-hidden text-center relative">
+                  <h3 class="text-gray-900 font-bold text-xl mb-3">Basic</h3>
+                  <div class="text-gray-600 font-bold text-5xl mb-2">
+                    $19<span class="text-gray-500 text-base">/mo</span>
+                  </div>
+                  <p class="text-gray-500 mb-5">Up to 5 projects</p>
+                  <Link
+                    class="bg-gray-800 text-white py-2 px-4 rounded-full text-sm hover:bg-gray-600 hover:text-white focus:outline-none focus:shadow-outline"
+                    href="#"
+                  >
+                    Select Plan
+                  </Link>
+                  <div class="absolute bottom-0 right-0 bg-red-500 px-3 py-2 mr-4 text-xs font-bold rounded-full text-white">
+                    Most Popular
+                  </div>
+                </div>
+              </div>
+              <div class="w-full md:w-1/3 px-6 mb-4">
+                <div class="h-full bg-gray-100 p-8 rounded-lg overflow-hidden text-center relative">
+                  <h3 class="text-gray-900 font-bold text-xl mb-3">Pro</h3>
+                  <div class="text-gray-600 font-bold text-5xl mb-2">
+                    $39<span class="text-gray-500 text-base">/mo</span>
+                  </div>
+                  <p class="text-gray-500 mb-5">Up to 20 projects</p>
+                  <Link
+                    class="bg-gray-800 text-white py-2 px-4 rounded-full text-sm hover:bg-gray-600 hover:text-white focus:outline-none focus:shadow-outline"
+                    href="#"
+                  >
+                    Select plan
+                  </Link>
+                </div>
+              </div>
+              <div class="w-full md:w-1/3 px-6 mb-4">
+                <div class="h-full bg-gray-100 p-8 rounded-lg overflow-hidden text-center relative">
+                  <h3 class="text-gray-900 font-bold text-xl mb-3">
+                    Enterprise
+                  </h3>
+                  <div class="text-gray-600 font-bold text-5xl mb-2">
+                    $99<span class="text-gray-500 text-base">/mo</span>
+                  </div>
+                  <p class="text-gray-500 mb-5">Unlimited projects</p>
+                  <Link
+                    class="bg-gray-800 text-white py-2 px-4 rounded-full text-sm hover:bg-gray-600 hover:text-white focus:outline-none focus:shadow-outline"
+                    href="#"
+                  >
+                    Select plan
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-gray-100 sectionClass">
+          <div class={`mx-auto px-6 py-20`}>
+            <h2
+              class={`${styles.sectionClassH2} text-4xl font-bold text-center text-gray-800 mb-8`}
+            >
+              Contact Us
+            </h2>
+            <div class="w-full max-w-2xl mx-auto">
+              <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                <div class="mb-4">
+                  <label class="block text-gray-700 font-bold mb-2" for="name">
+                    Name
+                  </label>
+                  <input
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="name"
+                    type="text"
+                    placeholder="John Doe"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label class="block text-gray-700 font-bold mb-2" for="email">
+                    Email
+                  </label>
+                  <input
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="email"
+                    type="email"
+                    placeholder="johndoe@example.com"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label
+                    class="block text-gray-700 font-bold mb-2"
+                    for="message"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="message"
+                    placeholder="Write your message here..."
+                  ></textarea>
+                </div>
+                <div class="mb-4">
+                  <button
+                    class="bg-gray-800 text-white py-2 px-4 rounded-full text-sm hover:bg-gray-600 hover:text-white focus:outline-none focus:shadow-outline"
+                    type="button"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
         <footer class="bg-gray-800 pt-10 sm:mt-10 pt-10">
           <div class="container mx-auto px-6">
             <div class="flex flex-wrap justify-center">
@@ -289,7 +435,7 @@ export default function Home() {
                 <h3 class="font-bold text-xl text-white mb-2">Links</h3>
                 <ul class="list-reset mb-2">
                   <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <Link href="#" class="text-white hover:underline">
+                    <Link href="faq.html" class="text-white hover:underline">
                       FAQ
                     </Link>
                   </li>
