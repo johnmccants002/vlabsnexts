@@ -215,12 +215,12 @@ export default function Home() {
                       Japanese Mobile App
                     </h3>
                     <p class="leading-relaxed mb-3 text-gray-900">
-                      Japan's leading mobile app for train schedules and route
+                      Japans leading mobile app for train schedules and route
                       planning, HyperDia is the go-to solution for locals and
                       tourists alike. With real-time updates, fare information,
                       and even wheelchair accessibility details, HyperDia
                       provides comprehensive and reliable transportation
-                      information for navigating Japan's complex train system.
+                      information for navigating Japans complex train system.
                     </p>
                     <Link
                       class="text-indigo-500 inline-flex items-center"
