@@ -62,7 +62,10 @@ export default function Home() {
       sgMail
         .send(msg)
         .then(() => {
-          console.log("Email sent");
+          alert("Message Sent!");
+          setEmail("");
+          setName("");
+          setMessage("");
         })
         .catch((error) => {
           console.error(error);
@@ -119,18 +122,7 @@ export default function Home() {
             </div>
           </div>
         </nav>
-        <section
-          className={`${styles.sectionClass} ${styles.valuepropheader}`}
-          // id={`${styles.}`}
-          // style={{
-          //   backgroundImage: `url(/images/city.png)`,
-          //   height: "100vh",
-          //   alignItems: "center",
-          //   display: "flex",
-          //   backgroundSize: "cover",
-          //   backgroundPosition: "center",
-          // }}
-        >
+        <section className={`${styles.sectionClass} ${styles.valuepropheader}`}>
           <div
             class={`${styles.mainContainer} ${styles.valuepropheaderContainer}`}
           >
@@ -148,34 +140,6 @@ export default function Home() {
             </Link>
           </div>
         </section>
-
-        {/* <header class="bg-white headerClass">
-          <div class="container mx-auto px-6 py-16">
-            <div class="items-center lg:flex">
-              <div class="lg:w-1/2">
-                <h2 class="text-3xl font-bold text-gray-800 md:text-4xl lg:text-5xl xl:text-6xl">
-                  Transform Your Business with Custom Software
-                </h2>
-                <p class="mt-4 text-gray-600 md:text-xl lg:text-2xl">
-                  We help you create software solutions that solve problems and
-                  drive growth. Get in touch with us today to learn more.
-                </p>
-                <div class="mt-8">
-                  <Link class="btn btn-primary" href="#">
-                    Get Started
-                  </Link>
-                </div>
-              </div>
-              <div class="lg:w-1/2 lg:ml-auto mx-20">
-                <img
-                  class="hidden lg:block"
-                  src="/images/city.png"
-                  alt="Victory Labs"
-                />
-              </div>
-            </div>
-          </div>
-        </header> */}
         <section class="bg-gray-100 sectionClass">
           <div class="container mx-auto px-6 py-20">
             <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
