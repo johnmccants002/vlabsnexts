@@ -13,10 +13,65 @@ import {
   faJsSquare,
   faNode,
 } from "@fortawesome/free-brands-svg-icons";
+import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [name, setName] = useState("");
+
+  function validateForm() {
+    let isValid = true;
+
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      isValid = false;
+      console.log("Please enter a valid email address");
+    }
+
+    // Validate message length
+    if (message.length < 1) {
+      isValid = false;
+      console.log("Please enter a message");
+    }
+
+    // Validate name length
+    if (name.length < 1) {
+      isValid = false;
+      console.log("Please enter a name");
+    }
+
+    return isValid;
+  }
+
+  const sgMail = require("@sendgrid/mail");
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+  const msg = {
+    to: "johnmccants002@gmail.com", // Change to your recipient
+    from: email, // Change to your verified sender
+    subject: "Victory Labs Contact",
+    text: message,
+    html: "<strong>and easy to do anywhere, even with Node.js</strong>",
+  };
+
+  const handleSend = () => {
+    if (validateForm) {
+      sgMail
+        .send(msg)
+        .then(() => {
+          console.log("Email sent");
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    } else {
+      alert("Please fill out all fields correctly.");
+    }
+  };
+
   return (
     <>
       <Head>
@@ -379,6 +434,8 @@ export default function Home() {
                     id="name"
                     type="text"
                     placeholder="John Doe"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                   />
                 </div>
                 <div class="mb-4">
@@ -390,6 +447,8 @@ export default function Home() {
                     id="email"
                     type="email"
                     placeholder="johndoe@example.com"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
                 <div class="mb-4">
@@ -403,12 +462,15 @@ export default function Home() {
                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     id="message"
                     placeholder="Write your message here..."
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                 </div>
                 <div class="mb-4">
                   <button
                     class="bg-gray-800 text-white py-2 px-4 rounded-full text-sm hover:bg-gray-600 hover:text-white focus:outline-none focus:shadow-outline"
                     type="button"
+                    onClick={handleSend}
                   >
                     Send Message
                   </button>
