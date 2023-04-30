@@ -45,7 +45,10 @@ export default function Services() {
                 >
                   Blog
                 </Link>
-                <Link class="mx-2 text-gray-600 hover:text-gray-800" href="#">
+                <Link
+                  class="mx-2 text-gray-600 hover:text-gray-800"
+                  href="/#contactUs"
+                >
                   Contact
                 </Link>
               </div>
