@@ -49,15 +49,15 @@ export default function Home() {
 
   const sgMail = require("@sendgrid/mail");
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-  const msg = {
-    to: "johnmccants002@gmail.com", // Change to your recipient
-    from: email, // Change to your verified sender
-    subject: "Victory Labs Contact",
-    text: message,
-    html: "<strong>and easy to do anywhere, even with Node.js</strong>",
-  };
 
   const handleSend = () => {
+    const msg = {
+      to: "johnmccants002@gmail.com", // Change to your recipient
+      from: email, // Change to your verified sender
+      subject: "Victory Labs Contact",
+      text: message,
+      html: "<strong>and easy to do anywhere, even with Node.js</strong>",
+    };
     if (validateForm) {
       sgMail
         .send(msg)
