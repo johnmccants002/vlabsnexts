@@ -14,6 +14,7 @@ import {
   faNode,
 } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
+import sgMail from "@sendgrid/mail";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -47,29 +48,27 @@ export default function Home() {
     return isValid;
   }
 
-  const sgMail = require("@sendgrid/mail");
-  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-
-  const handleSend = () => {
+  const handleSend = async () => {
     const msg = {
       to: "johnmccants002@gmail.com", // Change to your recipient
-      from: email, // Change to your verified sender
+      from: "johnmccants2@hotmail.com", // Change to your verified sender
       subject: "Victory Labs Contact",
-      text: message,
+      text: `${message} from: ${email}`,
       html: "<strong>and easy to do anywhere, even with Node.js</strong>",
     };
-    if (validateForm) {
-      sgMail
-        .send(msg)
-        .then(() => {
-          alert("Message Sent!");
-          setEmail("");
-          setName("");
-          setMessage("");
-        })
-        .catch((error) => {
-          console.error(error);
-        });
+    console.log("In handle send this is the msg object", msg);
+    if (validateForm()) {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(msg),
+      });
+      const data = await response.json();
+      setEmail("");
+      setMessage("");
+      setName("");
+      alert("Message Sent!");
+      console.log(data.message);
     } else {
       alert("Please fill out all fields correctly.");
     }
@@ -182,10 +181,6 @@ export default function Home() {
             </h2>
             <ul class="flex flex-wrap justify-center items-center tech-list">
               <li class="mx-10 my-6 flex flex-col items-center">
-                {/* <i
-                  class="fab fa-html5 fa-4x mb-4"
-                  style={{ color: "#b89c6e" }}
-                ></i> */}
                 <FontAwesomeIcon icon={faHtml5} size={"4x"} color={"#b89c6e"} />
                 <span class="text-center">HTML5</span>
               </li>
