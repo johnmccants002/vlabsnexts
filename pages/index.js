@@ -50,7 +50,7 @@ export default function Home() {
                 </Link>
                 <Link
                   class="mx-2 text-gray-600 hover:text-gray-800"
-                  href="blog.victorylabs.io"
+                  href="https://blog.victorylabs.io"
                 >
                   Blog
                 </Link>
