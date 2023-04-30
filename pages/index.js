@@ -54,7 +54,10 @@ export default function Home() {
                 >
                   Blog
                 </Link>
-                <Link class="mx-2 text-gray-600 hover:text-gray-800" href="#">
+                <Link
+                  class="mx-2 text-gray-600 hover:text-gray-800"
+                  href="#contactUs"
+                >
                   Contact
                 </Link>
               </div>
@@ -358,7 +361,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section class="bg-gray-100 sectionClass">
+        <section class="bg-gray-100 sectionClass" id="contactUs">
           <div class={`mx-auto px-6 py-20`}>
             <h2
               class={`${styles.sectionClassH2} text-4xl font-bold text-center text-gray-800 mb-8`}
