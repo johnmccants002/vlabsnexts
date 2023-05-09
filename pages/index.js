@@ -382,6 +382,10 @@ export default function Home() {
             >
               Contact Us
             </h2>
+            <h3>
+              This is not set up yet. Just text me 916-479-4366 or email me
+              johnmccants002@gmail.com
+            </h3>
             <div class="w-full max-w-2xl mx-auto">
               <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
                 <div class="mb-4">
