@@ -382,7 +382,9 @@ export default function Home() {
             >
               Contact Us
             </h2>
-            <h3>
+            <h3
+              class={`${styles.sectionClassH2} font-bold text-center text-gray-800 mb-8`}
+            >
               This is not set up yet. Just text me 916-479-4366 or email me
               johnmccants002@gmail.com
             </h3>
