@@ -38,7 +38,7 @@ export default function Navbar() {
               </Link> */}
             <Link
               class="mx-2 text-gray-600 hover:text-gray-800"
-              href="#contactUs"
+              href="/#contactUs"
             >
               Contact
             </Link>
