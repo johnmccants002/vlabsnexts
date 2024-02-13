@@ -8,7 +8,8 @@ export default function Navbar() {
           <div class="flex flex-row items-center gap-4 w-full md:w-auto text-gray-800 font-bold text-xl">
             <img
               src="/images/victorylogo.png"
-              width="3%"
+              width="40"
+              height="40"
               class="rounded-full"
             />
             <Link class="text-gray-800 hover:text-gray-700" href="#">
