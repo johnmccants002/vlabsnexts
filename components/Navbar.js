@@ -5,7 +5,12 @@ export default function Navbar() {
     <nav class="bg-white">
       <div class="container mx-auto px-6 py-4">
         <div class="flex justify-between items-center">
-          <div class="w-full md:w-auto text-gray-800 font-bold text-xl">
+          <div class="flex flex-row items-center gap-4 w-full md:w-auto text-gray-800 font-bold text-xl">
+            <img
+              src="/images/victorylogo.png"
+              width="3%"
+              class="rounded-full"
+            />
             <Link class="text-gray-800 hover:text-gray-700" href="#">
               Victory Labs
             </Link>

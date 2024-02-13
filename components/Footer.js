@@ -19,17 +19,26 @@ export default function Footer() {
             <h3 class="font-bold text-xl text-white mb-2">Social Media</h3>
             <ul class="list-reset mb-2">
               <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <Link href="#" class="text-white hover:underline">
+                <Link
+                  href="https://twitter.com/victorylabs_io"
+                  class="text-white hover:underline"
+                >
                   Twitter
                 </Link>
               </li>
               <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <Link href="#" class="text-white hover:underline">
+                <Link
+                  href="https://www.facebook.com/profile.php?id=61556425921560"
+                  class="text-white hover:underline"
+                >
                   Facebook
                 </Link>
               </li>
               <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <Link href="#" class="text-white hover:underline">
+                <Link
+                  href="https://www.instagram.com/victorylabs_io/"
+                  class="text-white hover:underline"
+                >
                   Instagram
                 </Link>
               </li>
@@ -40,7 +49,7 @@ export default function Footer() {
         <div class="flex flex-col md:flex-row md:items-center md:justify-between">
           <div>
             <p class="text-center md:text-left text-white py-4">
-              © 2023 Victory Labs. All rights reserved.
+              © 2024 Victory Labs. All rights reserved.
             </p>
           </div>
           <div class="flex items-center"></div>
