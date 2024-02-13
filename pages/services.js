@@ -30,7 +30,7 @@ export default function Services() {
                   class="w-full h-auto"
                 />
               </div>
-              <div class="w-full md:w-1/2 px-4">
+              <div class="w-full md:w-1/2 px-12">
                 <h3 class="text-2xl font-bold mb-4">Simple Website Services</h3>
                 <p class="text-gray-700 mb-4">
                   Our team is really good at creating websites. Think of us like
@@ -66,7 +66,7 @@ export default function Services() {
           </div>
         </section>
         <section class="py-20 bg-gray-100">
-          <div class="container mx-auto">
+          <div class="container mx-auto px-12">
             <h2 class="text-4xl font-bold text-center mb-12">
               Mobile App Development Services
             </h2>
@@ -107,7 +107,7 @@ export default function Services() {
           </div>
         </section>
         <section class="py-20 bg-gray-100">
-          <div class="container mx-auto">
+          <div class="container mx-auto px-12">
             <h2 class="text-4xl font-bold text-center mb-12">
               Logo and Marketing Design Services
             </h2>
@@ -147,7 +147,7 @@ export default function Services() {
             </div>
           </div>
         </section>
-        <section class="py-20">
+        <section class="py-20 px-8">
           <div class="container mx-auto">
             <h2 class="text-4xl font-bold text-center mb-12">
               Website Development Work
