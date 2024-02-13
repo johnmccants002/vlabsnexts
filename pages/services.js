@@ -17,45 +17,6 @@ export default function Services() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <nav class="bg-white">
-          <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-              <div class="w-full md:w-auto text-gray-800 font-bold text-xl">
-                <Link class="text-gray-800 hover:text-gray-700" href="#">
-                  Victory Labs
-                </Link>
-              </div>
-              <div class="flex items-center -mx-2">
-                <Link class="mx-2 text-gray-600 hover:text-gray-800" href="/">
-                  Home
-                </Link>
-
-                <Link
-                  href="/services"
-                  class="mx-2 text-gray-600 hover:text-gray-800"
-                >
-                  Services
-                </Link>
-
-                <Link class="mx-2 text-gray-600 hover:text-gray-800" href="#">
-                  Portfolio
-                </Link>
-                <Link
-                  class="mx-2 text-gray-600 hover:text-gray-800"
-                  href="https://blog.victorylabs.io"
-                >
-                  Blog
-                </Link>
-                <Link
-                  class="mx-2 text-gray-600 hover:text-gray-800"
-                  href="/#contactUs"
-                >
-                  Contact
-                </Link>
-              </div>
-            </div>
-          </div>
-        </nav>
         <section class="py-20 bg-gray-100">
           <div class="container mx-auto">
             <h2 class="text-4xl font-bold text-center mb-12">
@@ -70,37 +31,36 @@ export default function Services() {
                 />
               </div>
               <div class="w-full md:w-1/2 px-4">
-                <h3 class="text-2xl font-bold mb-4">
-                  HTML, CSS, and JavaScript
-                </h3>
+                <h3 class="text-2xl font-bold mb-4">Simple Website Services</h3>
                 <p class="text-gray-700 mb-4">
-                  Our team of web developers are experts in building websites
-                  using the latest HTML, CSS, and JavaScript technologies. We
-                  work closely with our clients to design and develop custom
-                  websites that meet their unique needs.
-                </p>
-                <h3 class="text-2xl font-bold mb-4">React and Node</h3>
-                <p class="text-gray-700 mb-4">
-                  We specialize in building web applications using popular
-                  frameworks like React and Node. Our team has extensive
-                  experience in building scalable and performant web
-                  applications using these technologies.
+                  Our team is really good at creating websites. Think of us like
+                  digital architects and builders who make sure your website
+                  looks great and works smoothly. We chat with you to understand
+                  what you need, and then we put together a website that fits
+                  just right for your business or personal use.
                 </p>
                 <h3 class="text-2xl font-bold mb-4">
-                  Content Management Systems
+                  Advanced Website Services
                 </h3>
                 <p class="text-gray-700 mb-4">
-                  We work with a variety of content management systems like
-                  WordPress and Squarespace to help our clients easily manage
-                  their website content. We can also build custom content
-                  management systems for clients with unique needs.
+                  We're also experts in making websites that can do a bit more
+                  complex stuff, like online stores or platforms that need to
+                  handle lots of visitors at once. We use some of the best tools
+                  out there to build these, ensuring your website is fast and
+                  reliable.
                 </p>
-                <Link
-                  href="#"
-                  class="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
-                >
-                  Learn More
-                </Link>
+                <h3 class="text-2xl font-bold mb-4">
+                  Content Management For Your Business
+                </h3>
+                <p class="text-gray-700 mb-4">
+                  Plus, if you've ever heard about the hassle of updating
+                  website content and thought, "That sounds like a nightmare,"
+                  we've got you covered. We set up easy-to-use systems that let
+                  you change or add anything on your website without needing to
+                  call in a pro. And if you need something really special, we
+                  can make a custom system that fits exactly what you're looking
+                  for.
+                </p>
               </div>
             </div>
           </div>
@@ -142,12 +102,6 @@ export default function Services() {
                   design and develop mobile applications that meet your unique
                   requirements.
                 </p>
-                <Link
-                  href="#"
-                  class="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
-                >
-                  Learn More
-                </Link>
               </div>
             </div>
           </div>
@@ -189,12 +143,6 @@ export default function Services() {
                   audience, develop messaging that resonates with them, and
                   create a plan for promoting your brand.
                 </p>
-                <Link
-                  href="#"
-                  class="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
-                >
-                  Learn More
-                </Link>
               </div>
             </div>
           </div>
@@ -207,147 +155,71 @@ export default function Services() {
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div class="bg-white rounded-lg overflow-hidden shadow-lg">
                 <img
-                  src="https://via.placeholder.com/800x500.png?text=Website+Development+Project"
+                  src="/images/fetchit.png"
                   alt="Website Development Project"
                   class="w-full h-auto"
                 />
                 <div class="px-6 py-4">
-                  <h3 class="text-2xl font-bold mb-2">Project Title</h3>
+                  <h3 class="text-2xl font-bold mb-2">FetchIt AI Platform</h3>
                   <p class="text-gray-700 text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    pellentesque erat non libero ullamcorper, vel auctor sapien
-                    lacinia.
+                    AI Learning Platform that utilizes ChatGPT to enhance
+                    students learning.
                   </p>
                   <Link
-                    href="#"
+                    href="https://www.fetchit.cc/"
                     class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
                   >
-                    Learn More
+                    View Page
                   </Link>
                 </div>
               </div>
               <div class="bg-white rounded-lg overflow-hidden shadow-lg">
                 <img
-                  src="https://via.placeholder.com/800x500.png?text=Website+Development+Project"
+                  src="/images/elevatelawn.png"
                   alt="Website Development Project"
                   class="w-full h-auto"
                 />
                 <div class="px-6 py-4">
-                  <h3 class="text-2xl font-bold mb-2">Project Title</h3>
+                  <h3 class="text-2xl font-bold mb-2">Elevate Lawn Care</h3>
                   <p class="text-gray-700 text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    pellentesque erat non libero ullamcorper, vel auctor sapien
-                    lacinia.
+                    Elevate Lawn Care provides routine lawn care services,
+                    property clean-ups, and garden design for residential Rancho
+                    Cordova, Folsom, and El Dorado Hills, California properties.
+                    Schedule an estimate with us today and let us work with you
+                    on maintaining a beautiful yard year-round
                   </p>
                   <Link
-                    href="#"
+                    href="https://www.elevatelawn.care/"
                     class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
                   >
-                    Learn More
+                    View Page
                   </Link>
                 </div>
               </div>
               <div class="bg-white rounded-lg overflow-hidden shadow-lg">
                 <img
-                  src="https://via.placeholder.com/800x500.png?text=Website+Development+Project"
+                  src="/images/aftershock.png"
                   alt="Website Development Project"
                   class="w-full h-auto"
                 />
                 <div class="px-6 py-4">
-                  <h3 class="text-2xl font-bold mb-2">Project Title</h3>
+                  <h3 class="text-2xl font-bold mb-2">AfterShock Festival</h3>
                   <p class="text-gray-700 text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    pellentesque erat non libero ullamcorper, vel auctor sapien
-                    lacinia.
+                    This is a landing page used to navigate info and content
+                    about the upcoming Aftershock music festival which is being
+                    held in Sacramento, CA this year (2024) from 10/10 - 10/13
                   </p>
                   <Link
-                    href="#"
+                    href="https://jake10693.github.io/AfterShock_Event_Flyer_Landing_Page/"
                     class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
                   >
-                    Learn More
+                    View Page
                   </Link>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
-        <footer class="bg-gray-800 pt-10 sm:mt-10 pt-10">
-          <div class="container mx-auto px-6">
-            <div class="flex flex-wrap justify-center">
-              <div class="w-full sm:w-1/2 px-6">
-                <div class="text-white">
-                  <h3 class="font-bold text-xl mb-2">Victory Labs</h3>
-                  <p class="mb-2">
-                    Victory Labs is a software development company that
-                    specializes in creating custom solutions for businesses.
-                  </p>
-                  <p>
-                    <Link href="#" class="hover:underline">
-                      Learn More
-                    </Link>
-                  </p>
-                </div>
-              </div>
-              <div class="w-full sm:w-1/4 px-6">
-                <h3 class="font-bold text-xl text-white mb-2">Links</h3>
-                <ul class="list-reset mb-2">
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <Link href="#" class="text-white hover:underline">
-                      FAQ
-                    </Link>
-                  </li>
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <Link href="#" class="text-white hover:underline">
-                      Help
-                    </Link>
-                  </li>
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <Link href="#" class="text-white hover:underline">
-                      Support
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div class="w-full sm:w-1/4 px-6">
-                <h3 class="font-bold text-xl text-white mb-2">Social Media</h3>
-                <ul class="list-reset mb-2">
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <Link href="#" class="text-white hover:underline">
-                      Twitter
-                    </Link>
-                  </li>
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <Link href="#" class="text-white hover:underline">
-                      Facebook
-                    </Link>
-                  </li>
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <Link href="#" class="text-white hover:underline">
-                      Instagram
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <hr class="h-px my-6 bg-gray-700 border-none" />
-            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-              <div>
-                <p class="text-center md:text-left text-white">
-                  © 2023 Victory Labs. All rights reserved.
-                </p>
-              </div>
-              <div class="flex items-center">
-                <Link href="#" class="text-white hover:underline mx-4">
-                  Privacy Policy
-                </Link>
-                <Link href="#" class="text-white hover:underline">
-                  Terms of Service
-                </Link>
-              </div>
-            </div>
-          </div>
-        </footer>
       </main>
     </>
   );

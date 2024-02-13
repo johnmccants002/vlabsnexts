@@ -21,6 +21,11 @@ function cssLoaderOptions(modules) {
   };
 }
 module.exports = {
+  env: {
+    NEXT_EMAILJS_PUBLIC_KEY: process.env.NEXT_EMAILJS_PUBLIC_KEY,
+    NEXT_EMAILJS_SERVICE_ID: process.env.NEXT_EMAILJS_SERVICE_ID,
+    NEXT_EMAILJS_TEMPLATE_ID: process.env.NEXT_EMAILJS_TEMPLATE_ID,
+  },
   webpack: (config) => {
     const oneOf = config.module.rules.find(
       (rule) => typeof rule.oneOf === "object"
