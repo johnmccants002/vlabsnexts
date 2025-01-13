@@ -48,6 +48,15 @@ export default function Footer() {
         <hr class="h-px my-6 bg-gray-700 border-none" />
         <div class="flex flex-col md:flex-row md:items-center md:justify-between">
           <div>
+            <div className="text-center">
+              <a
+                href="/privacy-policy"
+                className="text-blue-400 hover:underline"
+              >
+                Privacy Policy
+              </a>
+            </div>
+
             <p class="text-center md:text-left text-white py-4">
               © 2024 Victory Labs. All rights reserved.
             </p>
